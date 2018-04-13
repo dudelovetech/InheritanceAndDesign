@@ -6,9 +6,13 @@
 package inheritanceanddesign;
 
 /**
- *
+ * Represents financial assets that investors hold.
  * @author donny
  */
 public interface Asset {
+    // how much the asset is worth
+    public double getMarketValue();
     
+    // how much meoney has been made on this asset
+    public double getProfit();
 }

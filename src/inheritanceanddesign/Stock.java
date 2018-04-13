@@ -9,21 +9,17 @@ package inheritanceanddesign;
  * A stock object represents purchases of shares of a stock.
  * @author donny
  */
-public class Stock {
+public class Stock extends ShareAsset implements Asset{
     private String symbol; // stock symbol, e.g. "YAHOO"
     private int totalShares; // total shares purchased
     private double totalCost; // total cost for all shares
     
     // initializes a new stock with no shares purchased
     // pre: symbol != null
-    public Stock(String theSymbol){
-        if (theSymbol == null){
-            throw new NullPointerException();
-        }else{
-        this.symbol = theSymbol;
-        }
-        this.totalCost = 0.0;
-        this.totalShares = 0;
+    public Stock(String symbol, double currentPrice){
+
+        super(symbol, currentPrice);
+        totalShares = 0;
     }
     
     //returns the total profit or loss earned on this stock, based on the given price per share.
@@ -46,7 +42,23 @@ public class Stock {
         }
         
         this.totalShares = this.totalShares + shares;
-        this.totalCost = this.totalCost + shares * pricePerShare;
+        addCost(shares * pricePerShare);
+    }
+    
+    // returns the market value of this stock, which is the number of total shares
+    // times the share price
+    public double getMarketValue(){
+        return totalShares * getCurrentPrice();
+    }
+    
+    // returns the total number of shares purchased
+    public int getTotalShares(){
+        return totalShares;
+    }
+    
+    // returns the profit made on this stock
+    public double getProfit(){
+        return getMarketValue() - getTotalCost();
     }
     
 }
