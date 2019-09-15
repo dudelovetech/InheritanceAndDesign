@@ -10,9 +10,7 @@ package inheritanceanddesign;
  * @author donny
  */
 public class Stock extends ShareAsset implements Asset{
-    private String symbol; // stock symbol, e.g. "YAHOO"
     private int totalShares; // total shares purchased
-    private double totalCost; // total cost for all shares
     
     // initializes a new stock with no shares purchased
     // pre: symbol != null
@@ -55,10 +53,4 @@ public class Stock extends ShareAsset implements Asset{
     public int getTotalShares(){
         return totalShares;
     }
-    
-    // returns the profit made on this stock
-    public double getProfit(){
-        return getMarketValue() - getTotalCost();
-    }
-    
 }

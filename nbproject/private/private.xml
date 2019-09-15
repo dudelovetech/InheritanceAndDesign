@@ -4,11 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/donny/Documents/NetBeansProjects/InheritanceAndDesign/src/inheritanceanddesign/Stock.java</file>
-            <file>file:/C:/Users/donny/Documents/NetBeansProjects/InheritanceAndDesign/src/inheritanceanddesign/Rectangle.java</file>
-            <file>file:/C:/Users/donny/Documents/NetBeansProjects/InheritanceAndDesign/src/inheritanceanddesign/Circle.java</file>
+            <file>file:/C:/Users/donny/Documents/NetBeansProjects/InheritanceAndDesign/src/inheritanceanddesign/MutualFund.java</file>
+            <file>file:/C:/Users/donny/Documents/NetBeansProjects/InheritanceAndDesign/src/inheritanceanddesign/Asset.java</file>
+            <file>file:/C:/Users/donny/Documents/NetBeansProjects/InheritanceAndDesign/src/inheritanceanddesign/ShareAsset.java</file>
+            <file>file:/C:/Users/donny/Documents/NetBeansProjects/InheritanceAndDesign/src/inheritanceanddesign/DividendStock.java</file>
             <file>file:/C:/Users/donny/Documents/NetBeansProjects/InheritanceAndDesign/src/inheritanceanddesign/StockMain.java</file>
-            <file>file:/C:/Users/donny/Documents/NetBeansProjects/InheritanceAndDesign/src/inheritanceanddesign/Triangle.java</file>
-            <file>file:/C:/Users/donny/Documents/NetBeansProjects/InheritanceAndDesign/src/inheritanceanddesign/Shape.java</file>
         </group>
     </open-files>
 </project-private>

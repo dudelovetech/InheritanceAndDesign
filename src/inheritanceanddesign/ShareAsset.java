@@ -9,9 +9,9 @@ package inheritanceanddesign;
  * A ShareAsset object represents a general asset that has a symbol and holds shares. Initial version.
  * @author donny
  */
-public class ShareAsset{
+public abstract class ShareAsset implements Asset{
     private String symbol;
-    private double totalCost;
+    double totalCost;
     private double currenPrice;    
 
     // constructs a new share asset with the given symbol and current price
@@ -49,4 +49,13 @@ public class ShareAsset{
         this.currenPrice = currentPrice;
     }
     
+    // returns the current market value of this asset
+    public abstract double getMarketValue();
+    
+    // returns the profit earned on shares of this asset
+    public double getProfit(){
+        // calls an abstract getMarketValue method
+        // (the subclass will provide its implementation)
+        return getMarketValue() - totalCost;
+    }
 }
